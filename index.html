@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Cube & Pyramid Website- Home </title>
+  <!-- Author: Nikić Danilo AI36-2014 -->
+  <!--Loading widest standard character set to enable correctdyspaly of serbian letters-->
+	 <meta charset="UTF-8">	
+  <!--Loading bootstrap css styles-->
+	 <link rel="stylesheet" href="css/bootstrap.min.css">  
+  <!--Loading Custom css styles-->
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <!--Ensures correct display of bootstrap responsive scael-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+</head>
+
+<!--All the CSS styling and overwriting the bootstrap classes. The styles should be loaded to webpage beafore content and javascript. -->
+<link rel="stylesheet" href="style.css"> 
+
+
+
+<!-- The class="col-sm-12 col-md-8 col-lg-8" is refering to the division of the parent div element. 
+If a div is carying a row class it will be divided in 12 colums, and using the col class we cal specifi how many colums will a div inside of the row fill in the parent row div. 
+It is requiered that a div with a row class is inside of another div with a  container or container fluid class. For more info read at: http://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp -->
+
+
+<!--Main boddy of website with bootstrap responsive grid defined by one center colum for content, adn two side colums for advertisement-->
+<body>
+  <div class="container-fluid greyBackground ">  
+    <!--Container-fluid fills up the whole div, and container makes paddin on every side of div -->
+    <div class="row ">
+      <div class=" hidden-xs hidden-sm col-md-2 col-lg-2  " > 
+        <!--Left Advertisement place-->
+        <!--Curently empty s othe website is not too clustered-->
+      </div>
+
+      <div class="col-sm-12 col-md-8 col-lg-8 MiddleMainContentColumBackgroundHome " >
+        <!--MiddleMainContentColum-->
+        <br>
+
+        <!--Start of dark red background-->
+        <div class="container-fluid text-left headerBackground  ">
+          <!--HeadingImage-->                  
+          <img src="headerH144.png" class="img-responsive center-block" alt="Cube&PyramidHeaderImage " >     
+
+          <div class="Separator "></div>    
+          
+
+          <div class="headerBackground " >
+           <!--Navigation bar, aka the responsive menu-->
+           <div class="headerBackground ">
+            <nav role="navigation" class="navbar navbar-inverse ">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle ">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand noPading"><img src="iconTest.png" class="img-responsive" alt="LOGO" width="50" height="50"></a>
+              </div>
+              <!-- Collection of nav links and other content for toggling -->
+              <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="Cube page.html">Cube</a></li>
+                  <li><a href="Pyramid page.html">Pyramid</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right ">
+                  <li ><!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-inverse btn-lg" id="logInButton" data-toggle="modal" data-target="#myModal">Login</button>
+                    <button type="button" class="btn btn-inverse btn-lg" id="logOutButton">logout</button></li>
+                  </ul>
+                </div>
+              </nav>          
+            </div>
+
+          </div>          
+          <div class="Separator ">    
+          </div>
+        </div>
+
+
+
+
+
+        <div class="container-fluid headerBackground">  
+          <!--Inner row for responsive content 01-->
+          <div class="row" >
+            <!--Section 1-->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 section1"> 
+              <h2>The most cubest cubes in the cubest universe.</h2>
+              <p>Like totaly, for real man, it's like fully cubes this year. Like, you wouldnt belive how cubic this all cube-thing has cubed over the years. Just, like, cubes, and stuff.</p>
+              <img src="boxModel.png" class="img-responsive"   alt="Box Model">     
+            </div>
+            <!--Section 2-->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 section2"><h2>We provide the <span class="CustoMemphasize">two</span> , and the decision is on </h2> 
+              <br>
+              <img img id="myImg" src="we-need-you.png" class="img-responsive " alt="Pointing at YOU"  </img>
+              <br>
+
+              </div>
+
+              <!--Section 3-->
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 section3" "><h2>The pyramidical essence of a true pyramid experience.</h2>
+                <p>Like totaly, for real man, it's like fully pyramid this year. Like, you wouldnt belive how pyramidical this all pyramid-thing has pyramided over the years. Just, like, pyramids, and stuff.</p>
+                <img src="pyramidModel.png" alt="Pyramid Model" class="img-responsive " >    </div>              
+              </div>
+
+<div class="Separator "></div> 
+            </div> 
+              
+<!--START of Carouseul--> 
+            <div class="container-fluid headerBackground">
+            <div id="myCarousel" class="carousel slide greyBackground" data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="drivingcar.png" alt="Driving Car" class="img-responsive ">
+      </div>
+
+      <div class="item">
+        <img src="girlsFun.png" alt="Girls Fun" class="img-responsive ">
+      </div>
+    
+      <div class="item">
+        <img src="boysFun.png" alt="Boys Fun" class="img-responsive ">
+      </div>
+
+      <div class="item">
+        <img src="togeather.png" alt="Togeather" class="img-responsive ">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--End of Carouseul--> 
+    <br>
+  </div>
+
+
+            <!--End of dark red background--> 
+            <!--FooterStart-->
+            <div class="container-fluid text-center">
+              <p>
+                <a href="#top">Go to top</a>
+                <br>
+                Writen by
+                <a href="mailto:cikatetreb@gmail.com"><span class="CustoMemphasize">Danilo Nikić</span></a>
+              </p>
+            </div>
+            <!--FooterEnd-->
+          </div>       
+          <!--Inner row for responsive content 01 END-->
+
+
+          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 "  ><!--Right/MobileBottom Advertisement place-->
+
+            <img class="img-responsive center-block" id="clock" onclick="myFunction()" src="clock.png" >   
+
+
+            <br>
+            <img id="img_to_flip" class="img-responsive center-block" src="pic_src"        
+            max-width:100%;
+            />
+            <br>
+            <a href="http://www.pyramidinternational.com"><img  src="./advertisement/pyramidShop.png" alt="pyramid shop" class="img-responsive center-block" ></a>
+
+            <br>
+            <a href="http://mtel.me/poslovni/mbox-paketi"><img  src="./advertisement/mtelBox.png" alt="mtel shop" class="img-responsive center-block" ></a>
+            <br>
+            
+            <div id="fade"><img class="img-responsive center-block" src="steam.png"</div>
+
+            <div class="destructable" id="fadediv1" style="display:none;background-color:none;"><img src="take.png" class="img-responsive"  alt="take" ></div>
+            
+            <div class="destructable" id="fadediv2" style="display:none;background-color:none;"><img src="a.png" class="img-responsive"  alt="a" ></div>
+            <div class="destructable" id="fadediv3" style="display:none;background-color:none;"><img src="peace.png" class="img-responsive"  alt="peace" ></div><br>
+            
+
+
+
+          </div>
+
+          <!--main middle row end-->
+        </div>
+
+
+      </div>
+
+
+
+
+      <!--   MODALS - they are not displayed, they pop-up infront when trigered -->
+
+      <!-- The IMAGE ModalSTART -->
+      <div id="myIMGModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      <!-- The IMAGE ModalEND -->
+
+      <!-- Login ModalSTART -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"> &times; </button>
+              <h3> Login </h3>
+            </div>
+            <div class="modal-body" style="padding:40px 50px;">
+              <div class="form-group">
+                <label for="usrname">Username</label>
+                <input type="text" class="form-control" id="usrname" value="admin">
+              </div>
+              <div class="form-group">
+                <label for="psw">Password</label>
+                <input type="password" class="form-control" id="psw" value="admin">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-default" data-dismiss="modal" id="loginDataClose"> Login</button>
+              <button type="submit" class="btn btn-default" data-dismiss="modal"> Cancel </button>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!-- Login ModalEND -->
+
+
+
+      <!--All javascript used on website. Including jQuerry so bootstrap functions such as menu buttons can work. Javascript should be loded after style and content of website -->
+      <!-- Loading jQuery and Bootstrap javascript  -->
+     <script src="js/bootstrap.min.js"></script>
+      <script src="jquery-3.1.1.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/npm.js"></script>
+    
+      <!--Loading custom written javascript-->
+      <script src="code.js"></script>
+       <script src="sketch.js"></script>
+     
+    </body>
+
+
+
+
+
+</html>

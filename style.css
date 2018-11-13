@@ -1,0 +1,283 @@
+/*Nikić Danilo AI36-2014 */
+
+  /*website custom color palet
+  ---------------
+  993333 light red
+  663333 dark red
+  222222 darkgrey
+  3c563c green
+  3c5656 blue 
+  */
+
+
+
+.modal-backdrop {
+ z-index: 0;
+}
+.destructable:hover  {
+       opacity: 0.5;}
+
+       
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+.form-control
+{
+  background-color:   #222222;
+  border-color:   #222222;
+  color: white;
+}
+#clock:hover {
+ transition: all 0.3s ease-in-out 0s;
+ 
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+ 
+}
+
+
+  .MiddleMainContentColumBackgroundHome
+  { background-color: #993333; }
+
+    .MiddleMainContentColumBackgroundCube
+  { background-color: #3c563c; }
+    .MiddleMainContentColumBackgroundPyramid
+  { background-color: #3c5656; }
+
+  .headerBackground{
+      background-color: #663333;
+    }   
+  .noPading
+  {
+    /* this class removes pading  that bootstrap creates by default in a div container. Using this class content will stick directly to the edge of the div container*/
+    padding: 0;
+  }
+
+.btn-inverse
+{ text-decoration-color: white;
+  color: white;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  background-color:   #222222;
+}
+  body
+  {background-color: #222222;
+  }
+  .greyBackground
+  {background-color: #222222;}
+
+.Separator{
+ min-height: 42px;
+background-image: url("separatorH42.png");
+min-width: 100%;
+ background-repeat: repeat;
+margin-top: 0px;
+clear: both;
+}
+.navbar
+{border-radius:0px;
+  /*Removes rounded nav-bar corners*/
+   border: 0;
+ }
+.section1{
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+min-height: 100%;
+   height: 100%;   
+padding-top: 0px;
+padding-bottom: 0px;
+float:left;
+background-color: #663333;
+padding-bottom: 20px;
+text-align: left;
+}
+.section2{
+   padding-left: 20px;
+  padding-right: 20px;  
+    float: left;
+min-height: 100%;     
+padding-top: 0px;
+padding-bottom: 20px;
+float:left;
+background-color: #993333;
+text-align: center;
+
+}
+.section3{
+  padding-left: 20px;
+  padding-right: 20px;
+    float: left;
+min-height: 100%;
+   height: 100%;
+   
+padding-top: 0px;
+padding-bottom: 0px;
+float:left;
+background-color: #663333;
+text-align: right;
+padding-bottom: 20px;
+}
+
+/*--------------------Text formating--------------------*/
+p{
+ font-style:normal;
+  font-weight: 50;
+  font-size: 14px;
+  font-family:Verdana, "Geneva", sans-serif;
+  color: white;  
+}
+h1{
+ font-style: bold;
+  font-size: 40px;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  color:white;
+}
+.CustoMemphasize{
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  color:white; 
+  text-decoration: underline;
+}
+h2{ 
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  color:white;
+  text-decoration: none;
+}
+li{
+ont-style:italic;
+  font-size: 16px;
+  font-family:Verdana, Geneva, sans-serif;
+  color: white;
+list-style-image: url('listBullet.png');
+}
+/*---------------------------Links styles------------------------*/
+/* unvisited link */
+a:link {
+    color: white; 
+    font-size: 20px;
+  font-weight: 300;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  color:white; 
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+     color: white; 
+    font-size: 20px;
+  font-weight: 300;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  color:white; 
+  text-decoration: underline;
+}
+/* mouse over link */
+a:hover {
+    color: white;
+    font-size: 20px;
+  font-weight: 300;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+ text-decoration: underline;
+}
+/* selected link */
+a:active {
+    color: #3c563c;
+    font-size: 20px;
+  font-weight: 300;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  text-decoration: underline;
+}
+
+
+
+/*----------Image Model START---------*/
+#myImg {    
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19);}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+/*----------Image Model END---------*/
